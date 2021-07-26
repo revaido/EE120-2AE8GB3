@@ -39,13 +39,14 @@ I could use adb pull to backup most of the mtd partitions and using the file com
 As the device wasn't fully booting it was half bricked, but luckily just enough was up to try reflashing ubi1_0 as follows.
 
 cat /dev/ubi1_0 > backuptest
+
 ubiupdatevol /dev/ubi1_0 backuptest
 
 The ubifs volume extracted directly from ubi1_0 was larger than that extracted from the mtd15 dump aklthough both had the same crc. The device was knackered so balls to the wall time as I understand EE and Alcatel support aren't great for the EE120 devices for whatever reason and replace with other spec devices.
 
 I used software reboot to ensure it had time to fully finish flashing and this time the device booted.
 
-Now just battled past the hardcoded usernames and passwords - Wifi details are stored in /etc/hostapd.conf
+Now just battled past the usernames and passwords which were all changed by the previous owner - Wifi details are stored in /etc/hostapd.conf
 
 ssid=Private Hire Cab
 wpa_passphrase=supertaxi
