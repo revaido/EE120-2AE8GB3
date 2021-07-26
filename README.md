@@ -43,4 +43,6 @@ Now just battling with the hardcoded usernames and passwords - Wifi details are 
 ssid=Private Hire Cab
 wpa_passphrase=supertaxi
 
-Nice and easy, now just to find the default admin password location (it's more fun than resetting it to defaults - plus I don't even know if reset to defaults will even work due to the previous ubifs corruption).
+The login password for the web interface is stored in a sqlite db as follows:
+
+![image](https://user-images.githubusercontent.com/32154290/127005315-88f95511-af9b-4e77-b6b3-4fdc57dbe7ad.png)
