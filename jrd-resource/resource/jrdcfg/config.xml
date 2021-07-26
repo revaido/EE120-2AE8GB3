@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CONTENT date="2014-09-27" version="5.0">
+          <!-- 0: auto generate config.xml, 1: manual generate config.xml -->
+          <Generate_Type>0</Generate_Type>
+          <Base_Info>
+                <Project_Code>MW120</Project_Code>
+                <Project_Name>MW120</Project_Name>
+                <Customer_Code>E1</Customer_Code>
+                <Customer_Name>ee</Customer_Name>
+                <Major_Version>02</Major_Version>
+                <Minor_Version>00</Minor_Version>
+                <Release_Index>15</Release_Index>
+          </Base_Info>
+    <Variant_Code>VB</Variant_Code>
+    <CURef>MW120VB-2XE1000</CURef>
+    <Hardware>
+                   <PCB_Ver>V3.0</PCB_Ver>
+                   <RF_Device_Code>00</RF_Device_Code>
+                   <!-- RAM type 1: 0 - SDRAM, 1 DDR; RAM size 2-3: 0 32Mb 1 64Mb ...;  -->
+                   <RAM_Code>000</RAM_Code>
+                   <!-- Flash type 1: 0 - NOR, 1 NAND, 2 One-NAND, 3 eMMC_NAND; Vendor Code 2-3: 00 Tishiba, 01 Samsung, 02 Micron, 03 Hynix, 04 Nomonyx; FlasSize 4-5: 00 16Mb, 01 32Mb ...; Page Size 6-7: 00 512B, 01 1K ...-->
+                   <Flash_Code>1020803</Flash_Code>
+    </Hardware>
+    <Software>
+          <External_Ver>EE120_02_00_15</External_Ver>
+          <Inner_Ver>MW120_E1_02.00_15</Inner_Ver>
+        <Baseline_Dependency>
+          <SBL>MW120_SBL_E1_02.00_18</SBL>
+          <TZ>MW120_TZ_E1_02.00_07</TZ>
+          <RPM>MW120_RPM_E1_02.00_08</RPM>
+          <EFS2>MW120_EFS2_E1_02.00_46</EFS2>
+          <QDSP>MW120_QDSP_E1_02.00_76</QDSP>
+          <APPSBL>MW120_APPSBL_E1_02.00_10</APPSBL>
+          <APPS>MW120_APPS_E1_02.00_75</APPS>
+          <SYSTEM>MW120_SYSTEM_E1_02.00_332</SYSTEM>
+          <JRDRESOURCE>MW120_JRDRESOURCE_E1_02.00_65</JRDRESOURCE>
+          <PARTT>MW120_PARTT_E1_02.00_03</PARTT>
+        </Baseline_Dependency>    
+    </Software>
