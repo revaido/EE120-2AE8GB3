@@ -1,4 +1,4 @@
-# EE120-2AE8GB3
+# EE120-2AE8GB3 - fixing a faulty 4GEE Wifi
 Findings of an EE 4GEE Wifi EE120-2AE8GB3
 
 I bought a faulty 4GEE Wifi which wouldn't boot so storing findings here.
