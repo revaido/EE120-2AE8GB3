@@ -1,0 +1,2 @@
+# EE120-2AE8GB3
+Findings of an EE 4GEE Wifi EE120-2AE8GB3
