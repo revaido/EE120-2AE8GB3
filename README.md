@@ -7,6 +7,8 @@ The device would show the 4 LEDs and then just flash power a few times before go
 
 It was sold as having a battery problem, a multimeter showed 2.4v when it arrived which raised up overnight to over 3v so seemed it was half alive.
 
+I tried finding UART pins with a sigrok fx2 & Pulseview but nothing seemed to be outputting readable data, same with a ttl device going from 300bps to 5000000bps. Possibly a result of it not booting fully.
+
 To access the ADB Shell remove the battery, hold down the reset button and then power on. 
 Keep holding reset for over ten seconds and eventually the LEDs will start alternating.
 You should now have a mass storage device visible in Linux.
