@@ -1,0 +1,123 @@
+2021/07/26 14:29:41 [INFO]    ############################################################
+2021/07/26 14:29:41 [INFO]    OTU DLL Version 1.2.7, Build Id=2015032714, Protocol Id=20140122.
+2021/07/26 14:29:41 [DEBUG]   GisusDllImpl::SWVersionRequest(model=FIRMWARE, com_ref=MW120VB-2XE1000, upgrade_mode=2, client_type='1006')
+2021/07/26 14:29:41 [DEBUG]   AMConnection::Execute: Connection #acdff460: Request Execution Starting ... 
+2021/07/26 14:29:41 [DEBUG]   AMConnection::Execute: Connection #acdff460: We have to connect first to g2master-us-east.tctmobile.com ... 
+2021/07/26 14:29:41 [DEBUG]   AMConnection::TickConnect: Connection #acdff460: Connection request to 'g2master-us-east.tctmobile.com' done. Now waiting network feedback ... 
+2021/07/26 14:29:41 [DEBUG]   AMConnection::Execute: Connection #acdff460: Successfully connected to g2master-us-east.tctmobile.com!
+2021/07/26 14:29:41 [DEBUG]   AMConnection::Execute: Connection #acdff460: Connected to g2master-us-east.tctmobile.com! Now try to send request ... 
+2021/07/26 14:29:41 [DEBUG]   AMConnection::Execute: Connection #acdff460: . Now sending request 5 ... 
+2021/07/26 14:29:41 [DEBUG]   AMConnection::TickVersionReq: Connection #acdff460: now to contrubute to http msg !
+2021/07/26 14:29:41 [DEBUG]   AMConnection::TickVersionReq: Connection #para=/check.php?id=356508090059xxx&curef=MW120VB-2XE1000&fv=020015&type=FIRMWARE&mode=2&cltp=1006&cktd=0!
+2021/07/26 14:29:41 [DEBUG]   AMConnection::TickVersionReq: Connection #acdff460: Changed sub state from 0 to 1.
+2021/07/26 14:29:41 [DEBUG]   GisusNetImpl::send_msg: #acdff460:the msg after dump is: 
+GET /check.php?id=356508090059xxx&curef=MW120VB-2XE1000&fv=020015&type=FIRMWARE&mode=2&cltp=1006&cktd=0 HTTP/1.1
+User-Agent: GOTU Client v1.2.7 Mifi_FOTA
+Date: 2021/07/26 14:29:41 GMT+0
+Cache-ontrol: no-cache
+Accept: */*
+HOST: g2master-us-east.tctmobile.com
+Connection: close
+
+2021/07/26 14:29:41 [DEBUG]   AMConnection::TickVersionReq: Connection #acdff460: Changed sub state from 1 to 2.
+2021/07/26 14:29:41 [DEBUG]   AMConnection::TickVersionReq: Connection #acdff460: VersionReq ('356508090059xxx','FIRMWARE','MW120VB-2XE1000','020015','2', '1006') request sent.
+2021/07/26 14:29:42 [DEBUG]   ###############SessionManager::create_session_info:file_nb =1
+2021/07/26 14:29:42 [DEBUG]   SessionManager::create_file_set_info:  ------file_nb =1
+2021/07/26 14:29:42 [DEBUG]   AMConnection::TickVersionReq: Connection #acdff460:get  eAPFT_File_Upgrade_Mode = 2
+2021/07/26 14:29:42 [WARNING] AMConnection::TickVersionReq: Connection #acdff460: Failed to scan for AppPacket::eAPFT_ReleaseInfo_Fake_SW due to error 1000! .
+2021/07/26 14:29:42 [DEBUG]   AMConnection::TickVersionReq: Connection #acdff460: get eAPFT_File_Index = 0
+2021/07/26 14:29:42 [DEBUG]   AMConnection::TickVersionReq: Connection #acdff460: VersionInfo received.
+2021/07/26 14:29:42 [DEBUG]   AMConnection::Execute: Connection #acdff460: VersionInfo received ... 
+2021/07/26 14:29:42 [DEBUG]   AMConnection::Disconnect: Connection #acdff460 Disconnecting.
+2021/07/26 14:29:42 [DEBUG]   AMConnection::Execute: Connection #acdff460:  connection disconnected ... 
+2021/07/26 14:29:42 [DEBUG]   AMConnection::Execute: Connection #acdff460: Instanciating the session object ... 
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Com Ref: 'MW120VB-2XE1000'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Generic Com Ref: 'MW120VB-2XE1000'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: File Set: File #0 => '1a83ca8c5f84149af024ae3f96d9726319860d2f'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: File Set: File #0 => '1a83ca8c5f84149af024ae3f96d9726319860d2f'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Fileset FootPrint: 'RS4EVER#1a83ca8c5f84149af024ae3f96d9726319860d2f'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Fileset UID: 'B568BB60D5008B78DF89CE4A557C84BD155C763A'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: name: 'MW120VB-2XE1000#FIRMWARE#B568BB60D5008B78DF89CE4A557C84BD155C763A#020018#020015'!
+2021/07/26 14:29:42 [DEBUG]   <-------Session::init complete: _file_container.size=  1
+2021/07/26 14:29:42 [DEBUG]   <-------Session::init complete: _non_downloaded_file_list.size = 1
+2021/07/26 14:29:42 [DEBUG]   Session::Session:  c to init name of download  info files 
+2021/07/26 14:29:42 [DEBUG]   SessionMasterFile::MakeSessionMasterFileName('MW120VB-2XE1000#FIRMWARE#B568BB60D5008B78DF89CE4A557C84BD155C763A#020018#020015chunk_info','/cache/downloaded','0'): = '/cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin'.
+2021/07/26 14:29:42 [ERROR]   Failed to open info file '/cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin' due to non existing path.
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_O not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_N not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_M not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_L not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_K not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_J not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_I not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_H not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_G not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_F not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_E not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_D not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_C not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_B not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_A not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_z not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_y not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_x not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_w not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_v not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_u not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_t not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_s not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_r not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_q not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_p not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_o not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_n not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_m not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_l not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_k not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_j not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_i not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_h not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_g not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_f not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_e not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_d not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_c not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_b not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_a not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_9 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_8 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_7 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_6 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_5 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_4 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_3 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_2 not exist!!
+2021/07/26 14:29:42 [WARNING] Session::read_downloaded_chunks backup file /cache/downloaded/512FD88A18866705A3033E28067A8334DC33123C.bin_1 not exist!!
+2021/07/26 14:29:42 [DEBUG]   ~~~~~~~~~~~register_session_info: name is MW120VB-2XE1000#FIRMWARE#B568BB60D5008B78DF89CE4A557C84BD155C763A#020018#020015
+2021/07/26 14:29:42 [DEBUG]   AMConnection::Execute: Connection #acdff460: session object instanciation completed!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Com Ref: 'MW120VB-2XE1000'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Generic Com Ref: 'MW120VB-2XE1000'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: File Set: File #0 => '1a83ca8c5f84149af024ae3f96d9726319860d2f'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: File Set: File #0 => '1a83ca8c5f84149af024ae3f96d9726319860d2f'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Fileset FootPrint: 'RS4EVER#1a83ca8c5f84149af024ae3f96d9726319860d2f'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: Fileset UID: 'B568BB60D5008B78DF89CE4A557C84BD155C763A'!
+2021/07/26 14:29:42 [DEBUG]   SessionManager::get_session_name: name: 'MW120VB-2XE1000#FIRMWARE#B568BB60D5008B78DF89CE4A557C84BD155C763A#020018#020015'!
+2021/07/26 14:29:42 [DEBUG]   SessionMasterFile::MakeSessionMasterFileName('MW120VB-2XE1000#FIRMWARE#B568BB60D5008B78DF89CE4A557C84BD155C763A#020018#020015','/cache/downloaded','0'): = '/cache/downloaded/06C4CF870B60EABB2477BA354F38B5493AD60E8F.bin'.
+2021/07/26 14:29:43 [INFO]    Shutting down O.T.U. Library ...
+2021/07/26 14:29:43 [DEBUG]   AMConnection::Shutdown: Connection #abdff460 received shutdown request.
+2021/07/26 14:29:43 [DEBUG]   AMConnection::Disconnect: Connection #abdff460 Disconnecting.
+2021/07/26 14:29:43 [DEBUG]   AMConnection::Execute: Connection #abdff460 Terminated.
+2021/07/26 14:29:43 [INFO]    O.T.U. Library: Succeeded to join AMreport!
+2021/07/26 14:29:43 [DEBUG]   AMConnection::Shutdown: Connection #acdff460 received shutdown request.
+2021/07/26 14:29:43 [DEBUG]   AMConnection::Disconnect: Connection #acdff460 Disconnecting.
+2021/07/26 14:29:43 [DEBUG]   AMConnection::Execute: Connection #acdff460 Terminated.
+2021/07/26 14:29:43 [INFO]    O.T.U. Library: Succeeded to join AM!
+2021/07/26 14:29:43 [DEBUG]   MultiDownloader::Shutdown: Thread shutdown has been requested.
+2021/07/26 14:29:43 [DEBUG]   MultiDownloader:StopThreads #addff460: Starting.
+2021/07/26 14:29:43 [DEBUG]   MultiDownloader:StopThreads #addff460: Finished.
+2021/07/26 14:29:43 [DEBUG]   MultiDownloader:Execute #addff460: Processing loop has terminated.
+2021/07/26 14:29:43 [INFO]    O.T.U. Library: Succeeded to join MD!
+2021/07/26 14:29:43 [DEBUG]   ReqExecutor::Execute: Thread #ad5ff460 thread has been terminated.
+2021/07/26 14:29:43 [INFO]    O.T.U. Library: Succeeded to join ReqExecutor!
+2021/07/26 14:29:43 [INFO]    O.T.U. Library: Great! No timer exists in scheduler after shut down all threads.
+2021/07/26 14:29:43 [INFO]    O.T.U. Library has been shutdown!
