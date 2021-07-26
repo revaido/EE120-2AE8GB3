@@ -1,0 +1,37 @@
+└─# nmap -T4 -p- -A 192.168.1.1                                                                                                                           1 ⨯
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-26 14:26 BST
+Nmap scan report for 4gee.wifi (192.168.1.1)
+Host is up (0.0024s latency).
+Not shown: 65532 closed ports
+PORT     STATE    SERVICE VERSION
+53/tcp   open     domain  dnsmasq 2.78
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.78
+80/tcp   open     http    GoAhead WebServer 2.5.0 (PeerSec MatrixSSL 3.3.0)
+|_http-server-header: GoAhead-Webs/2.5.0 PeerSec-MatrixSSL/3.3.0-OPEN
+| http-title: Site doesn't have a title (text/html).
+|_Requested resource was http://4gee.wifi/index.html
+|_http-trane-info: Problem with XML parsing of /evox/about
+7777/tcp filtered cbt
+MAC Address: AE:DE:4C:3F:BF:xx (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=7/26%OT=53%CT=1%CU=34452%PV=Y%DS=1%DC=D%G=Y%M=AEDE4C%T
+OS:M=60FEB848%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10F%TI=Z%CI=I%II=I
+OS:%TS=U)OPS(O1=M5B4NNSNW5%O2=M5B4NNSNW5%O3=M5B4NW5%O4=M5B4NNSNW5%O5=M5B4NN
+OS:SNW5%O6=M5B4NNS)WIN(W1=3908%W2=3908%W3=3908%W4=3908%W5=3908%W6=3908)ECN(
+OS:R=Y%DF=Y%T=40%W=3908%O=M5B4NNSNW5%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   2.44 ms 4gee.wifi (192.168.1.1)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 50.76 seconds
