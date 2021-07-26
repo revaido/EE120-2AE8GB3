@@ -68,3 +68,6 @@ You get an HTTP 204 if no updates are available or a HTTP 200 if an update is av
 <?xml version="1.0" encoding="utf-8"?>
 <GOTU><UPDATE_DESC>9</UPDATE_DESC><ENCODING_ERROR>0</ENCODING_ERROR><CUREF>MW120VB-2XE1000</CUREF><VERSION><TYPE>2</TYPE><FV>020015</FV><TV>020018</TV><SVN>VER_020018</SVN><RELEASE_INFO><year>2018</year><month>09</month><day>11</day><hour>14</hour><minute>25</minute><second>52</second><timezone>GMT 8</timezone><publisher>peng.z</publisher></RELEASE_INFO></VERSION><FIRMWARE><FW_ID>325843</FW_ID><FILESET_COUNT>1</FILESET_COUNT><FILESET><FILE><FILENAME>update.zip</FILENAME><FILE_ID>353493</FILE_ID><SIZE>16685759</SIZE><CHECKSUM>1a83ca8c5f84149af024ae3f96d9726319860d2f</CHECKSUM><FILE_VERSION>10</FILE_VERSION><INDEX>0</INDEX></FILE></FILESET></FIRMWARE><SPOP_LIST><SPOP_NB>0</SPOP_NB></SPOP_LIST><DESCRIPTION/></GOTU>
 
+At this point the device rebooted and took a few minutes before booting with the new firmware.
+
+Quite happy with that and now have a working EE120 & EE40 both bought cheaply as faulty.
