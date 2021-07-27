@@ -78,3 +78,6 @@ You get an HTTP 204 if no updates are available or a HTTP 200 if an update is av
 At this point the device rebooted and took a few minutes before booting with the new firmware.
 
 Quite happy with that and now have a working EE120 & EE40 both bought cheaply as faulty.
+
+# Hidden features
+The EE120 on firmware 02.00.18 appears to be the same as James Mac White has writte in his great EE70 Github Wiki here - https://github.com/jamesmacwhite/hh70-ee/wiki/Hidden-features-and-settings
