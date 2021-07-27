@@ -79,5 +79,10 @@ At this point the device rebooted and took a few minutes before booting with the
 
 Quite happy with that and now have a working EE120 & EE40 both bought cheaply as faulty.
 
+# 5GHz WiFi taking 10 mins to come online from power on
+The EE120 has DFS enabled in it's drivers - in my case it was trying to use channel 124 when coming online. Channels 120, 124 and 128 have a possibility of radar so the device will wait for 10 minutes of no monitored radar activity before coming online. For most people using 2.4GHz will be enough and the device will be online instantly.
+
+I do wonder how many people have thought they have a faulty EE120 when they change it to use 5GHz WiFi and then nothing shows up for ten minutes after turning on :)
+
 # Hidden features
 The EE120 on firmware 02.00.18 appears to be the same as James Mac White has writte in his great EE70 Github Wiki here - https://github.com/jamesmacwhite/hh70-ee/wiki/Hidden-features-and-settings
