@@ -11,10 +11,11 @@ When connecting to a PC it was coming up as a TPST Recovery Port with USB Vendor
 
 It was sold as having a battery problem, a multimeter showed 2.4v when it arrived which raised up overnight to over 3v so seemed it was half alive as trickle charging.
 
-I tried finding UART pins with a sigrok fx2 & Pulseview but nothing seemed to be outputting readable data at any speed, same with a ttl device going from 300bps to 5000000bps. Possibly a result of it not booting fully. There were data bursts on two pins but nothing would decode it.
+I tried finding UART pins with a sigrok fx2 & Pulseview but nothing seemed to be outputting readable data at any speed, same with a ttl device going from 300bps to 5000000bps and various other settings, ie 8N1, 7E1, 7O1. Possibly a result of it not booting fully. There were data bursts on two pins but nothing would decode it.
 
 I had a play with the hardware and found a way to get it to present the SCSI storage so you could change modes.
 
+# Accessing ADB shell
 To access the ADB Shell remove the battery, hold down the reset button and then power on. 
 Keep holding reset for over ten seconds and eventually the LEDs will start alternating.
 You should now have a mass storage device visible in Linux.
@@ -48,17 +49,20 @@ The ubifs volume extracted directly from ubi1_0 was larger than that extracted f
 
 I used software reboot to ensure it had time to fully finish flashing and this time the device booted.
 
+# WiFi Configuration location
 Now just battled past the usernames and passwords which were all changed by the previous owner - Wifi details are stored in /etc/hostapd.conf
 
 ssid=Private Hire Cab
 wpa_passphrase=supertaxi
 
+# Admin u/p location
 The login password for the web interface is stored in a sqlite db as follows:
 
 ![image](https://user-images.githubusercontent.com/32154290/127005315-88f95511-af9b-4e77-b6b3-4fdc57dbe7ad.png)
 
 Once I had access I reset the settings to my likings and now could get into the interface to kick off an update.
 
+# Firmware over the air details
 At this point a file named _fota.log was created in /cache and when the update was confirmed via the GUI temporary staging files are created in /cache/downloaded until complete when they are put together as update.zip which is then applied over a reboot.
 
 You can easily recreate the URL checked with wget as follows (using a made up IMEI):
