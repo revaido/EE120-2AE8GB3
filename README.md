@@ -1,6 +1,8 @@
 # EE120-2AE8GB3 - fixing a faulty 4GEE Wifi
 Findings of an EE 4GEE Wifi EE120-2AE8GB3 (known as a MW120VB-2XE1000 for update purposes).
 
+These are a rebranded Alcatel Linkzone Cat12 device capable of 600Mbps upload and 100Mbps over LTE using 3 channel carrier aggregation.
+
 I bought a faulty 4GEE Wifi which wouldn't boot so storing findings here. 
 
 Sorry if it's a mess but I normally do this sort of thing without publishing online.
