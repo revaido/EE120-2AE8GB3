@@ -5,7 +5,7 @@ These are a rebranded Alcatel Linkzone Cat12 device capable of 600Mbps upload an
 
 I bought a faulty 4GEE Wifi which wouldn't boot so storing findings here. 
 
-Sorry if it's a mess but I normally do this sort of thing without publishing online.
+Sorry if it's a mess but I normally do this sort of thing without publishing online and it just lives in my head!
 
 The device would show the 4 LEDs and then just flash the battery LED a few times before going dead. 
 
